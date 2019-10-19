@@ -1,0 +1,26 @@
+
+.footer-call-us-icons {
+  display:flex;
+  justify-content: space-between;
+  img {
+    align-self:center;
+    max-height:50px;
+    @media (max-width: $screen-xs) {
+      margin: 5px;
+    }
+  }
+  @media (max-width: $screen-sm) {
+    flex-wrap: wrap;
+    width: 90%;
+    justify-content: center;
+  }
+}
+.newsletter-subscription-form-container input.newsletter-suscription-form-input{
+  margin-left: 0%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+
+
+

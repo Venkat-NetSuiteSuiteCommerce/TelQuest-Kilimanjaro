@@ -1,0 +1,358 @@
+footer{
+  a{
+    color: #00273f;
+    &.social-link{
+      &:hover{
+        i{
+          color: $sc-ink5;
+        }
+      }
+    }
+  }
+}
+
+.stock-available{
+  background-color: transparent !important;
+}
+.cms-footer-icon-facebook {
+  @extend .fa;
+  @extend %fa-facebook;
+  color: #fff;
+}
+.cms-footer-icon-twitter {
+  @extend .fa;
+  @extend %fa-twitter;
+  color: #fff;
+}
+.cms-footer-icon-youtube {
+  @extend .fa;
+  @extend %fa-youtube;
+  color: #fff;
+}
+.cms-footer-icon-instagram {
+  @extend .fa;
+  @extend %fa-instagram;
+  color: #fff;
+}
+.cms-footer-icon-phone {
+  @extend .fa;
+  @extend %fa-phone;
+  color: #fff;
+}
+.footer-cms-social-content-columns-icons {
+  display: flex;
+  align-items: center;
+  li {
+    background: $sc-color-primary;
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+}
+
+
+.footer-cms-social-content-columns-logo-section {
+  display: flex;
+  padding: 0 0 0 10px;
+  img {
+    align-self: center;
+    width: 33%;
+  }
+}
+.footer-cms-social-content-columns-text {
+  margin-left: 10px;
+  ul {
+    font-size: 12px;
+    list-style: disc inside !important;
+    li {
+      list-style: disc inside !important;
+    }
+  }
+}
+.newsletter-footer-text {
+  font-size: 12px;
+  span {
+    text-decoration: underline;
+    font-weight: 700;
+  }
+}
+.footer-content-call-us {
+  color:#fff;
+  text-align: left;
+
+  @media (min-width: $screen-sm) {
+    float: right;
+  }
+  h4, p{
+    color: #fff;
+  }
+}
+.call-us-only-large-devices {
+  display: none;
+  @media (max-width: $screen-md){
+    display: block;
+  }
+}
+.call-us-only-small-devices {
+  display: block;
+  @media (max-width: $screen-md){
+    display: none;
+  }
+
+}
+.newsletter-subscription-form-label {
+  color: #4d5256;
+}
+.footer-content-right {
+  @media (max-width: $screen-md) {
+    padding: 0;
+  }
+}
+
+.footer{
+  background-color: #00273f;
+  background-image: linear-gradient(#00273f, #01395c);
+}
+
+
+.footer-container{
+  > div {
+    margin-bottom: 25px;
+  }
+   padding-top:40px;
+
+  p.footer-title{
+    color: white;
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    @media (max-width: $screen-md) {
+      font-size: 20px;
+    }
+  }
+  .footernav a{
+    font-weight: 100;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 8px;
+    @media (max-width: $screen-md) {
+      font-size: 16px;
+      font-weight: 300;
+    }
+    &.social-link{
+      display: inline-block;
+      margin-right: 15px;
+      font-size: 25px;
+    }
+    i.cms-footer-icon-phone{
+      margin-right: 10px;
+    }
+    &:hover{
+      color: $sc-ink5;
+    }
+  }
+}
+
+.newsletter-cms{
+  width: 20%;
+  float: top;
+  margin-left: 75%;
+
+}
+
+.footernote{
+  width: 100%;
+}
+
+
+
+.newsletter-container{
+  height: 82px;
+  background-color: #f2f2f2;
+  @media screen and (max-width: 600px) {
+    height: 140px;
+  }
+
+
+  .newsletter-note{
+      display:none;
+  }
+
+  .newsletter-subscribe{
+    margin-top: 20px;
+    width:33%;
+    float: left;
+    small{
+      float: left;
+      color: white;
+      font-size: 12px;
+      display: block;
+    }
+  }
+  .newsletter-title {
+    margin-left: 20%;
+    margin-top: 25px;
+    width: 25%;
+    float: left;
+    text-align: center;
+    color: #00273f;
+    font-size: 20px;
+    font-weight: 500;
+    @media screen and (max-width: 600px) {
+      margin-left: 0%;
+    }
+  }
+
+
+  .newsletter-subscription-form-container [data-validation-error="block"] {
+    padding: 5px;
+    width: 300px;
+    margin-right: 150px;
+    color: red;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+
+  .newsletter-alert-placeholder [data-validation-error="block"] {
+    padding: 5px;
+    width: 300px;
+    margin-right: 150px;
+    color: red;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+
+  button.newsletter-subscription-form-button-subscribe{
+    position: absolute;
+    width: 10%;
+    float: left;
+    background: #00273f;
+    border:1px solid darken($sc-ink4 , 10%);
+
+
+    transition: all 0.2s;
+    &:hover{
+      background: $sc-ink5;
+      border:1px solid $sc-ink5;
+    }
+    @media screen and (max-width: 600px) {
+      width: 40%;
+    }
+  }
+
+  .shopper-approved{
+    float: left;
+    width:33%;
+    text-align:center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+
+  .newsletter-subs-form-container [data-validation-error="block"] {
+    padding: 5px;
+    margin-right: 150px;
+    color: red;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .newsletter-suscription-form-input{
+    width: 75% !important;
+    float: left;
+    position: relative;
+    height: 40px;
+    margin-bottom: 10px;
+    @media screen and (max-width: 600px) {
+      width: 100% !important;
+    }
+  }
+
+    button.newsletter-subform-button-subscribe{
+      float: right;
+      position: absolute;
+      width: 10%;
+      color: white;
+      padding-left: 15px;
+      padding-right: 15px;
+      font-size: 14px;
+      font-weight: 400;
+      height: 44px;
+      background: $sc-ink5;
+      border:1px solid $sc-ink5;
+      transition: all 0.2s;
+      &:hover{
+        background: darken($sc-ink4 , 10%);
+        border:1px solid darken($sc-ink4 , 10%);
+      }
+      @media screen and (max-width: 600px) {
+        width: 40%;
+      }
+    }
+
+
+
+
+
+
+  .shopper-approved{
+    float: left;
+    width:33%;
+    text-align:center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+
+
+
+.shopping-layout-footer .myaccount-layout-footer .checkout-layout-footer{
+    background-color: #00273f;
+    small{
+      color: white;
+      font-size: 12px;
+      line-height: 40px;
+      display: inline-block;
+    }
+  }
+
+.footer_note {
+  background-color: #00273f;
+  color: white;
+  font-size: .7rem;
+  font-weight: normal;
+}
+
+.copy {
+  color: white;
+  padding-bottom: 25px;
+}
+
+@media screen and (max-width: 600px) {
+  .newsletter-container {
+    width: 100%;
+
+    .newsletter-note {
+      margin-top: 5%;
+      width: 100%;
+      height: 33%;
+    }
+
+    .newsletter-title {
+      width: 100%;
+      height: 33%;
+    }
+
+    .newsletter-subscribe {
+      display: inline;
+      height: 33%;
+      width: 60%;
+    }
+  }
+}
